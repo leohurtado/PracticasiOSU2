@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DA_EVA_PRACTICA_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bcu-gv-18T">
+                                <rect key="frame" x="30" y="28" width="540" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aPD-Y0-3WO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0dY-W0-1ZB"/>
+                                </connections>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pinterest" translatesAutoresizingMaskIntoConstraints="NO" id="zZW-Ya-AGF">
+                                <rect key="frame" x="148" y="252" width="297" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="5Iv-hp-qah"/>
+                                    <constraint firstAttribute="width" constant="297" id="BYl-X9-cUU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bcu-gv-18T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6cy-FP-UzH"/>
+                            <constraint firstItem="zZW-Ya-AGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WZj-QR-R78"/>
+                            <constraint firstItem="zZW-Ya-AGF" firstAttribute="top" secondItem="Bcu-gv-18T" secondAttribute="bottom" constant="14" id="bSu-p1-neB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bcu-gv-18T" secondAttribute="leading" id="mbA-D2-H8h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bcu-gv-18T" secondAttribute="trailing" constant="20" id="u8q-f5-baO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Imagen" destination="zZW-Ya-AGF" id="TvP-B8-49a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pinterest" width="64" height="64"/>
+    </resources>
+</document>
